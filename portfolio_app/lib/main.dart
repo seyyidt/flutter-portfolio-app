@@ -12,7 +12,11 @@ class PortfolioApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Portfolio App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        textTheme: TextTheme(
+          bodyText2: TextStyle(
+            color: Colors.white,
+          ),
+        ),
       ),
       home: SafeArea(
         child: MainPage(),

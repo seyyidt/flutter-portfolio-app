@@ -14,14 +14,17 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(32.0),
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              UserTopWidget(),
+              Padding(
+                padding: const EdgeInsets.only(top: 10, bottom: 10),
+                child: UserTopWidget(),
+              ),
               Text(
-                'test',
+                'about me lorem ipsum doler sit amet lorem ipsum doler sit amet lorem ipsum doler sit amet lorem ipsum doler sit amet',
               ),
             ],
           ),
