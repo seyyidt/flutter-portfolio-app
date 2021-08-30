@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_app/view/skills.dart';
 import 'package:portfolio_app/view/user_top_widget.dart';
 
 class MainPage extends StatefulWidget {
@@ -24,7 +25,12 @@ class _MainPageState extends State<MainPage> {
                 child: UserTopWidget(),
               ),
               Text(
-                'about me lorem ipsum doler sit amet lorem ipsum doler sit amet lorem ipsum doler sit amet lorem ipsum doler sit amet',
+                'I am a very passionate App Developer located in Vienna.',
+                textAlign: TextAlign.center,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10, bottom: 10),
+                child: SkillsWidget(),
               ),
             ],
           ),

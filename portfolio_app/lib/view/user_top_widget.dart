@@ -39,7 +39,7 @@ class _UserTopWidgetState extends State<UserTopWidget> {
           Padding(
             padding: const EdgeInsets.only(top: 10),
             child: Text(
-              "Fullstack Developer",
+              "App Developer",
               style:
                   TextStyle(fontStyle: FontStyle.italic, color: Colors.white70),
             ),
