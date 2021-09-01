@@ -1,3 +1,4 @@
+import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_timeline/flutter_timeline.dart';
 import 'package:flutter_timeline/indicator_position.dart';
@@ -10,8 +11,7 @@ class CVWidget extends StatefulWidget {
 }
 
 class _CVWidgetState extends State<CVWidget> {
-  @override
-  Widget build(BuildContext context) {
+  TimelineTheme getTimeline() {
     return TimelineTheme(
         data: TimelineThemeData(lineColor: Colors.white),
         child: Timeline(
@@ -68,5 +68,23 @@ class _CVWidgetState extends State<CVWidget> {
             ),
           ],
         ));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ExpandablePanel(
+      theme: const ExpandableThemeData(
+        iconColor: Colors.white,
+        headerAlignment: ExpandablePanelHeaderAlignment.center,
+      ),
+      header: Text("CV"),
+      collapsed: Text(
+        "",
+        softWrap: true,
+        maxLines: 2,
+        overflow: TextOverflow.ellipsis,
+      ),
+      expanded: getTimeline(),
+    );
   }
 }

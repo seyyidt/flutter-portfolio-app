@@ -30,11 +30,11 @@ class _MainPageState extends State<MainPage> {
                 textAlign: TextAlign.center,
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10, bottom: 10),
+                padding: const EdgeInsets.only(top: 15, bottom: 0),
                 child: SkillsWidget(),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 10, bottom: 10),
+                padding: const EdgeInsets.only(top: 0, bottom: 5),
                 child: CVWidget(),
               ),
             ],
