@@ -19,7 +19,7 @@ class _UserTopWidgetState extends State<UserTopWidget> {
             width: 100,
             child: CircleAvatar(
               radius: 50,
-              backgroundColor: Colors.blue,
+              backgroundImage: AssetImage("profile.png"),
             ),
             decoration: new BoxDecoration(
               shape: BoxShape.circle,

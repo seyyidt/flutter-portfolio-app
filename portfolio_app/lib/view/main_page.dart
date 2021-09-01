@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_app/view/cv.dart';
 import 'package:portfolio_app/view/skills.dart';
 import 'package:portfolio_app/view/user_top_widget.dart';
 
@@ -25,12 +26,16 @@ class _MainPageState extends State<MainPage> {
                 child: UserTopWidget(),
               ),
               Text(
-                'I am a very passionate App Developer located in Vienna.',
+                'I am a passionate App Developer located in Vienna.',
                 textAlign: TextAlign.center,
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
                 child: SkillsWidget(),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10, bottom: 10),
+                child: CVWidget(),
               ),
             ],
           ),
