@@ -86,9 +86,11 @@ packages:
   footer:
     dependency: "direct main"
     description:
-      name: footer
-      url: "https://pub.dartlang.org"
-    source: hosted
+      path: "."
+      ref: master
+      resolved-ref: a1b1cf1540add7c2e310acc245ed6cdf88b30e9b
+      url: "git://github.com/seyyidt/Flutter-Footer.git"
+    source: git
     version: "0.0.3"
   matcher:
     dependency: transitive
