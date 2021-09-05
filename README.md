@@ -1,4 +1,4 @@
 # flutter-portfolio-app
-A portfolio example app built for all platforms with flutter.
+A portfolio app built with flutter.
 
 ![demo](https://github.com/seyyidt/flutter-portfolio-app/blob/master/demo.gif)
