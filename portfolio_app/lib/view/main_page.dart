@@ -1,9 +1,11 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:footer/footer.dart';
 import 'package:footer/footer_view.dart';
 import 'package:portfolio_app/view/cv.dart';
 import 'package:portfolio_app/view/skills.dart';
 import 'package:portfolio_app/view/user_top_widget.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MainPage extends StatefulWidget {
   MainPage({Key? key}) : super(key: key);
@@ -18,7 +20,29 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: new FooterView(
-          footer: new Footer(child: Text("test"), padding: EdgeInsets.all(10)),
+          footer: new Footer(
+            child: new RichText(
+              text: new TextSpan(
+                children: [
+                  new TextSpan(
+                    text: '',
+                    style: new TextStyle(color: Colors.white),
+                  ),
+                  new TextSpan(
+                    text: 'Github',
+                    style: new TextStyle(color: Colors.blue),
+                    recognizer: new TapGestureRecognizer()
+                      ..onTap = () {
+                        launch(
+                            'https://github.com/seyyidt/flutter-portfolio-app');
+                      },
+                  ),
+                ],
+              ),
+            ),
+            padding: EdgeInsets.all(20),
+            backgroundColor: Colors.black,
+          ),
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.all(32.0),

@@ -25,7 +25,7 @@ class _CVWidgetState extends State<CVWidget> {
                   style: TextStyle(color: Colors.white),
                 ),
                 content: Text(
-                  "TGM - Abteilung Informationstechnologie\nWien 1200\n2011-2017",
+                  "TGM - Abteilung Informationstechnologie\nVienna 1200\n2011-2017",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -41,7 +41,7 @@ class _CVWidgetState extends State<CVWidget> {
                   style: TextStyle(color: Colors.white),
                 ),
                 content: Text(
-                  "Accenture\nWien / Deutschland\n2017-2020",
+                  "Accenture\nVienna / Germany\n2017-2020",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -57,7 +57,7 @@ class _CVWidgetState extends State<CVWidget> {
                   style: TextStyle(color: Colors.white),
                 ),
                 content: Text(
-                  "OE24\nWien\n2021-today",
+                  "OE24\nVienna\n2021-today",
                   style: TextStyle(color: Colors.white),
                 ),
               ),
