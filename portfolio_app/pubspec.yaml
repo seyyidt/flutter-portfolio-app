@@ -33,7 +33,11 @@ dependencies:
     git:
       url: git://github.com/softmarshmallow/flutter-timeline.git
       ref: master
-  footer: ^0.0.3
+  footer:
+    git:
+      url: git://github.com/seyyidt/Flutter-Footer.git
+      ref: master
+  url_launcher: ^6.0.10
 
 dev_dependencies:
   flutter_test:
